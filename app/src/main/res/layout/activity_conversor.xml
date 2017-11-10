@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_conversor_1"
+        android:text="@string/valor_em_metros"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_conversor_1"
+        android:layout_below="@id/tv_conversor_1"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_conversor_1"
+        android:text="@string/km"
+        android:id="@+id/btn_conversor_km"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_conversor_1"
+        android:layout_toRightOf="@id/btn_conversor_km"
+        android:text="@string/cm"
+        android:id="@+id/btn_conversor_cm"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_conversor_1"
+        android:layout_toRightOf="@id/btn_conversor_cm"
+        android:text="@string/pol"
+        android:id="@+id/btn_conversor_pol"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_conversor_1"
+        android:layout_toRightOf="@id/btn_conversor_pol"
+        android:text="@string/milhas"
+        android:id="@+id/btn_conversor_milhas"/>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FDPApp</string>
+    <string name="numero1">Número 1:</string>
+    <string name="numero2">Número 2:</string>
+    <string name="somar">+</string>
+    <string name="subtrair">-</string>
+    <string name="multiplicar">*</string>
+    <string name="dividir">/</string>
+    <string name="valor_em_metros">Valor em metros:</string>
+    <string name="km">KM</string>
+    <string name="cm">CM</string>
+    <string name="pol">Pol</string>
+    <string name="milhas">milhas</string>
+    <string name="valor_convertido">Valor Convertido:</string>
+</resources>

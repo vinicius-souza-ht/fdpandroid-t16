@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numero1"
+        android:id="@+id/tv_n1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_num1"
+        android:layout_below="@id/tv_n1"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numero2"
+        android:id="@+id/tv_n2"
+        android:layout_below="@id/ed_num1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_num2"
+        android:layout_below="@id/tv_n2"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/somar"
+        android:id="@+id/btn_soma"
+        android:layout_below="@id/ed_num2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtrair"
+        android:id="@+id/btn_subtracao"
+        android:layout_below="@id/ed_num2"
+        android:layout_toRightOf="@id/btn_soma"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multiplicar"
+        android:id="@+id/btn_multiplicacao"
+        android:layout_below="@id/ed_num2"
+        android:layout_toRightOf="@id/btn_subtracao"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dividir"
+        android:id="@+id/btn_divisao"
+        android:layout_below="@id/ed_num2"
+        android:layout_toRightOf="@id/btn_multiplicacao"
+        />
+</RelativeLayout>
