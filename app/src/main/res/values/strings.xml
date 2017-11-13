@@ -12,4 +12,6 @@
     <string name="pol">Pol</string>
     <string name="milhas">milhas</string>
     <string name="valor_convertido">Valor Convertido:</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="conversor">Conversor</string>
 </resources>

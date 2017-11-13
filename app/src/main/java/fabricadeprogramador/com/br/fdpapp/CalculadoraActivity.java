@@ -59,14 +59,14 @@ public class CalculadoraActivity extends AppCompatActivity {
 
                     Double subtracao = n1 - n2;
 
-                    Toast.makeText(CalculadoraActivity.this, "O resultado da soma: " + subtracao, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CalculadoraActivity.this, "O resultado da subtração: " + subtracao, Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
         final Button btnMultiplicacao = findViewById(R.id.btn_multiplicacao);
 
-        btnSubtracao.setOnClickListener(new View.OnClickListener() {
+        btnMultiplicacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -83,14 +83,14 @@ public class CalculadoraActivity extends AppCompatActivity {
 
                     Double multiplicacao = n1 * n2;
 
-                    Toast.makeText(CalculadoraActivity.this, "O resultado da soma: " + multiplicacao, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CalculadoraActivity.this, "O resultado da multiplicação: " + multiplicacao, Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
         final Button btnDivisao = findViewById(R.id.btn_divisao);
 
-        btnSubtracao.setOnClickListener(new View.OnClickListener() {
+        btnDivisao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -110,7 +110,7 @@ public class CalculadoraActivity extends AppCompatActivity {
 
                     Double divisao = n1 / n2;
 
-                    Toast.makeText(CalculadoraActivity.this, "O resultado da soma: " + divisao, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CalculadoraActivity.this, "O resultado da divisão: " + divisao, Toast.LENGTH_SHORT).show();
                 }
             }
         });

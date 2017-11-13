@@ -40,7 +40,16 @@ public class ConversorActivity extends AppCompatActivity {
                     Double valorEmMetros = Double.parseDouble(valor);
                     Double resultado = valorEmMetros * 100;
 
-                    Toast.makeText(ConversorActivity.this, "O resultado é: " + resultado, Toast.LENGTH_LONG).show();
+                    Intent irParaResultado = new Intent(ConversorActivity.this, ResultadoConversorActivity.class);
+
+
+                    Bundle bundle = new Bundle();
+                    bundle.putDouble("valorMetros", valorEmMetros);
+                    bundle.putDouble("valorConvertido", resultado);
+
+                    irParaResultado.putExtras(bundle);
+
+                    startActivity(irParaResultado);
                 }
             }
         });
@@ -67,8 +76,6 @@ public class ConversorActivity extends AppCompatActivity {
                     irParaResultado.putExtras(bundle);
 
                     startActivity(irParaResultado);
-
-//                    Toast.makeText(ConversorActivity.this, "O resultado é: " + resultado, Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -85,7 +92,16 @@ public class ConversorActivity extends AppCompatActivity {
                     Double valorEmMetros = Double.parseDouble(valor);
                     Double resultado = valorEmMetros * 39.370;
 
-                    Toast.makeText(ConversorActivity.this, "O resultado é: " + resultado, Toast.LENGTH_LONG).show();
+                    Intent irParaResultado = new Intent(ConversorActivity.this, ResultadoConversorActivity.class);
+
+
+                    Bundle bundle = new Bundle();
+                    bundle.putDouble("valorMetros", valorEmMetros);
+                    bundle.putDouble("valorConvertido", resultado);
+
+                    irParaResultado.putExtras(bundle);
+
+                    startActivity(irParaResultado);
                 }
             }
         });
@@ -102,7 +118,16 @@ public class ConversorActivity extends AppCompatActivity {
                     Double valorEmMetros = Double.parseDouble(valor);
                     Double resultado = valorEmMetros * 0.00062137;
 
-                    Toast.makeText(ConversorActivity.this, "O resultado é: " + resultado, Toast.LENGTH_LONG).show();
+                    Intent irParaResultado = new Intent(ConversorActivity.this, ResultadoConversorActivity.class);
+
+
+                    Bundle bundle = new Bundle();
+                    bundle.putDouble("valorMetros", valorEmMetros);
+                    bundle.putDouble("valorConvertido", resultado);
+
+                    irParaResultado.putExtras(bundle);
+
+                    startActivity(irParaResultado);
                 }
             }
         });
