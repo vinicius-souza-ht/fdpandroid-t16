@@ -60,6 +60,9 @@ public class ConversorActivity extends AppCompatActivity {
 
                 String valor = ed1.getText().toString();
 
+                Usuario usu = new Usuario();
+                usu.nome = "Jão TESTE";
+
                 if(valor.isEmpty()){
                     Toast.makeText(ConversorActivity.this, "Insira os dados !", Toast.LENGTH_SHORT).show();
                 } else {
@@ -72,6 +75,7 @@ public class ConversorActivity extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putDouble("valorMetros", valorEmMetros);
                     bundle.putDouble("valorConvertido", resultado);
+                    bundle.putSerializable("usuario", usu);
 
                     irParaResultado.putExtras(bundle);
 

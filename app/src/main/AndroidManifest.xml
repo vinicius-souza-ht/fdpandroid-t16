@@ -13,6 +13,7 @@
         <activity android:name=".CalculadoraActivity"></activity>
         <activity android:name=".ResultadoConversorActivity"></activity>
         <activity android:name=".ConversorActivity"></activity>
+        <activity android:name=".ListaActivity"></activity>
         <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

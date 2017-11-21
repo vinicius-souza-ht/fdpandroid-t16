@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 /**
  * Created by viniciuspodi on 13/11/17.
  */
@@ -18,16 +21,20 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        Button btnCalculadora = findViewById(R.id.btn_menu_calculadora);
+        ButterKnife.bind(this);
+
+//        Button btnCalculadora = findViewById(R.id.btn_menu_calculadora);
         Button btnConversor = findViewById(R.id.btn_menu_conversor);
 
-        btnCalculadora.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent irParaCalculadora = new Intent(MenuActivity.this, CalculadoraActivity.class);
-                startActivity(irParaCalculadora);
-            }
-        });
+//        btnCalculadora.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent irParaCalculadora = new Intent(MenuActivity.this, CalculadoraActivity.class);
+//                startActivity(irParaCalculadora);
+//            }
+//        });
+
+
 
         btnConversor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,5 +44,17 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @OnClick(R.id.btn_menu_calculadora)
+    public void irCalculadora(){
+        Intent irParaCalculadora = new Intent(MenuActivity.this, CalculadoraActivity.class);
+        startActivity(irParaCalculadora);
+    }
+
+    @OnClick(R.id.btn_menu_agenda)
+    public void irAgenda(){
+        Intent irParaAgenda = new Intent(MenuActivity.this, ListaActivity.class);
+        startActivity(irParaAgenda);
     }
 }

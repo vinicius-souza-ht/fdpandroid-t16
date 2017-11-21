@@ -7,14 +7,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class CalculadoraActivity extends AppCompatActivity {
+
+    @BindView(R.id.ed_num1)
+    EditText edNum1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculadora);
 
-        final EditText edNum1 = findViewById(R.id.ed_num1);
+        ButterKnife.bind(this);
+
+//        final EditText edNum1 = findViewById(R.id.ed_num1);
         final EditText edNum2 = findViewById(R.id.ed_num2);
         final Button btnSoma = findViewById(R.id.btn_soma);
 

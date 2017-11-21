@@ -14,4 +14,6 @@
     <string name="valor_convertido">Valor Convertido:</string>
     <string name="calculadora">Calculadora</string>
     <string name="conversor">Conversor</string>
+    <string name="fechar">Fechar</string>
+    <string name="agenda">Agenda</string>
 </resources>

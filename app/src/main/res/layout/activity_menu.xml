@@ -15,4 +15,11 @@
         android:id="@+id/btn_menu_conversor"
         android:text="@string/conversor"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_menu_agenda"
+        android:text="@string/agenda"/>
+
+
 </LinearLayout>
